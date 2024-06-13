@@ -68,7 +68,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>体重</string>
+    <string>体重（kg)</string>
    </property>
   </widget>
   <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
