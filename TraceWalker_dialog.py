@@ -42,7 +42,7 @@ class TraceWalkerDialog(QtWidgets.QDialog, FORM_CLASS):
         #レイヤを取得
         layer = self.mMapLayerComboBox.currentLayer() 
         if layer is None:
-            QMessageBox.information(self,"エラー","対象ラインが選択状態になっていません。")
+            QMessageBox.information(self,"エラー","レイヤを設定してください。")
             return
         #歩行速度
         speed = self.doubleSpinBox_1.value() *1000 
@@ -104,7 +104,7 @@ class TraceWalkerDialog(QtWidgets.QDialog, FORM_CLASS):
                     self.add(layer,feature,columns[2],str(kcal)+"kcal")
                     
         layer.commitChanges() 
-        QMessageBox.information(self,"結果","値を属性テーブルに追加しました。")
+        QMessageBox.information(self,"結果","実行しました。")
 
                     
 
