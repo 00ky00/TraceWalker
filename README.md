@@ -2,18 +2,16 @@
 ポートフォリオとしてQGISプラグインを作成しました。
 当プラグインを一言で表すと『散歩ルートプランナー』です。
 
+
+
+# 工夫
+メニューの
+
+
+---  
 # TraceWaler
 ラインレイヤに対して以下属性テーブルを作成し、算出した値を付与するためのプラグインです。  
 属性付与はfeatureごとにされます。  
-
----
-# トレース方法
-1. QGISのレイヤ ＞ レイヤ作成 ＞ 新規シェープファイルレイヤを選択。  
-![./docs/画面5](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A25.png)  
-2. ファイル名と保存先を入力、ジオメトリ型をラインストリングしてOKを選択。※必要であれば他変更  
-![./docs/画面6](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A26.png)  
-3. 編集モードを切り替え ＞ 線の地物を追加 ＞ 実際に散歩ルートをトレース  
-![./docs/画面7](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A27.png)  
 
 ---
 # プラグイン使用方法
