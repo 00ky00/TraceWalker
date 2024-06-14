@@ -89,7 +89,7 @@ class TraceWalkerDialog(QtWidgets.QDialog, FORM_CLASS):
                     #分
                     time2 = round(lenght / speed *60)
                     #時
-                    time3 = round(lenght / speed)
+                    time3 = round(lenght / speed,1)
                     
                     if time >= 1:
                         self.add(layer,feature,columns[1],str(time3)+"時間")
