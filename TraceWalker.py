@@ -108,7 +108,7 @@ class TraceWalker:
         if self.first_start == True:
             self.first_start = False
             self.dlg = TraceWalkerDialog()
-    
+        self.dlg.mMapLayerComboBox.setFilters(QgsMapLayerProxyModel.LineLayer)
         # show the dialog
         self.dlg.show()
         # Run the dialog event loop
@@ -118,6 +118,6 @@ class TraceWalker:
             # Do something useful here - delete the line containing pass and
             # substitute with your code.
             pass
-        self.dlg.mMapLayerComboBox.setFilters(QgsMapLayerProxyModel.LineLayer)
+        
 
 
