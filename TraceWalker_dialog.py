@@ -21,7 +21,7 @@ class TraceWalkerDialog(QtWidgets.QDialog, FORM_CLASS):
         self.setupUi(self)
 
         # 実行ボタン
-        self.button_box.accepted.connect(self.run_shred)
+        self.button_box.accepted.connect(self.run_main)
         self.button_box.rejected.connect(self.dlg_close)
         
 
@@ -38,7 +38,7 @@ class TraceWalkerDialog(QtWidgets.QDialog, FORM_CLASS):
             layer.commitChanges()
 
         
-    def run_shred(self):
+    def run_main(self):
         #レイヤを取得
         layer = self.mMapLayerComboBox.currentLayer() 
         if layer is None:
