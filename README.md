@@ -1,7 +1,7 @@
 # TraceWalker
 
 ## 概要
-ラインレイヤに算出した『距離』、『移動時間』、『消費カロリー』をfeatureごとに属性付与するためのプラグインです。  
+ラインレイヤに算出した『距離』、『移動時間』、『消費カロリー』をfeatureごとに属性付与するためのQGISプラグインです。  
 
 消費カロリーの算出方法については下記式から算出。  
 `エネルギー消費量(kcal) = METs(強度) * 体重　* 時間(h) `   
@@ -39,10 +39,10 @@
 
   
 3. 設定後、OKを押して、以下画面が出たら完了です。  
-[./docs/画面2](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A22.png)
+![./docs/画面2](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A22.png)  
   
 実行後の属性テーブル  
-![./docs/画面3](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A23.png)
+![./docs/画面3](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A23.png)  
 
 カラムについて
 - lenght：featureの距離
