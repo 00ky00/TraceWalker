@@ -32,8 +32,8 @@
 ![./icon.png](https://github.com/00ky00/TraceWalker/blob/main/icon.png)
 2. 表示メニューにデータを入力してください。  
 ![./docs/画面1](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A21.png)  
-- Layer：調べたいラインレイヤを選択してください。
-- 歩行スピード(km/h)：歩行スピードを入力してください。
+- Layer：調べたいラインレイヤを選択してください。  
+- 歩行スピード(km/h)：歩行スピードを入力してください。  
   ※歩行スピードが分からない場合、初期値4.8でも問題ありません。
 - 体重(kg)：体重を入力してください。
 
