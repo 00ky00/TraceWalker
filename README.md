@@ -31,7 +31,7 @@
 1. 当プラグインを開いてください。  
 ![./icon.png](https://github.com/00ky00/TraceWalker/blob/main/icon.png)
 2. 表示メニューにデータを入力してください。  
-![./docs/画面1](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A21.png)  
+![./docs/画面1](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E5%83%8F1.png)  
 - Layer：調べたいラインレイヤを選択してください。  
 - 歩行スピード(km/h)：歩行スピードを入力してください。  
   ※歩行スピードが分からない場合、初期値4.8でも問題ありません。
@@ -49,6 +49,10 @@
 - time：移動時間
 - kcal：消費カロリー
   
+---  
+## アイコンについて
+
+
 ---  
 
 ## アイコンについて
