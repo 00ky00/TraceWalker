@@ -50,8 +50,10 @@
 - kcal：消費カロリー
   
 ---  
-## アイコンについて
-
+## デモ
+![./demo/demo](https://github.com/00ky00/TraceWalker/blob/main/demo/demo.png)  
+上記画像で使用したシェープファイルを下記に格納  
+https://github.com/00ky00/TraceWalker/tree/main/demo
 
 ---  
 
