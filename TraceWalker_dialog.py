@@ -30,11 +30,10 @@ class TraceWalkerDialog(QtWidgets.QDialog, FORM_CLASS):
     
 
     #テーブルに対して値を追加する
-    def add(self,layer,feature,column,value):
-            layer.startEditing()
-            feature.setAttribute(column, value) 
+    def add(self,layer,feature,column,y):
+            feature.setAttribute(column, y) 
             layer.updateFeature(feature)
-            layer.commitChanges()
+
 
         
     def run_main(self):
@@ -68,14 +67,17 @@ class TraceWalkerDialog(QtWidgets.QDialog, FORM_CLASS):
                 layer.dataProvider().addAttributes([newfield])
                 layer.updateFields() 
                 layer.commitChanges()
+            
                 
         #属性テーブルに値を入れる処理(メイン)
         features = layer.getFeatures() 
+        layer.startEditing()
         for feature in features:
                     distance_calculator = QgsDistanceArea()
                     distance_calculator.setEllipsoid('WGS84')
                     lenght = round(distance_calculator.measureLength(feature.geometry()))
                     lenght2 = round(lenght / 1000,1)
+                    #距離
                     if lenght >= 1000:
                         self.add(layer,feature,columns[0],str(lenght2)+"km")
                     else:
@@ -100,7 +102,7 @@ class TraceWalkerDialog(QtWidgets.QDialog, FORM_CLASS):
                     kcal = round(mets * weight * time ,3)
                     
                     self.add(layer,feature,columns[2],str(kcal)+"kcal")
-                    
+        layer.commitChanges()          
         
         QMessageBox.information(self,"結果","値を属性テーブルに追加しました。")
 
