@@ -96,13 +96,12 @@ class TraceWalkerDialog(QtWidgets.QDialog, FORM_CLASS):
                         self.add(layer,feature,columns[1],str(time2)+"分")
                     else:
                         self.add(layer,feature,columns[1],str(time1)+"秒")
-                        
-                    #消費カロリー
+                                            #消費カロリー
                     kcal = round(mets * weight * time ,3)
                     
                     self.add(layer,feature,columns[2],str(kcal)+"kcal")
                     
-        layer.commitChanges() 
+        
         QMessageBox.information(self,"結果","値を属性テーブルに追加しました。")
 
                     
