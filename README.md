@@ -31,7 +31,7 @@
 1. QGISをダウンロード(https://qgis.org/ja/site/forusers/download.html)
 2. このリポジトリをzipファイルでダウンロード。
 3. QGISのプラグインの管理とインストールからダウンロードしたzipを読み込みます。
-![./docs/画面5](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A25.png) 
+![./docs/画面4](https://github.com/00ky00/TraceWalker/blob/main/docs/%E7%94%BB%E9%9D%A24.png) 
 
    
 ---
